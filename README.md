@@ -1,7 +1,7 @@
 To start, run:
 npm istall
 http-server ./src when we use server sometimes there could be an error which does not show the google button. Try reload the bage, it helps always
-if you wont check the ESlint - npm run lint
+if you want check the ESlint - npm run lint
 if you want to make a build, npm run build
 if you want to get rid of the build, npm run clear
 
