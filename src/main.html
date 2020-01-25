@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0,
+            shrink-to-fit=no">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Piskel Clone</title>
+    </head>
+    <body>
+        <header>
+            <div id="header-title">
+                <h1>Piskel Clone</h1>
+                <h2>New Piskel</h2>
+            </div>
+        </header>
+        <main>
+            <div id="screen-pos">
+                <div id="left-side">
+                    <div class="left-side__block-a">
+                        
+                        <div id="left-side__block-a_framesManipulations">
+                            <input type="button" onclick="return addFrame()" id="framesWork_add" value="addFRAME">
+                            <input type="button" onclick="return deleteFrame()" id="framesWork_delete" value="deleteFRAME">
+                            <input type="button" onclick="return duplicateFrame()" id="framesWork_duplicate" value="duplicateFrame">
+                        </div>
+                        <div class="left-side__block-a_line"></div>
+                        <div id="left-side__block-a_actionButtons">
+                            <div id="left-side__block-a_actionButtons_tools">
+                                <div id="eraser">
+                                    <button  onclick="return eraser()" id="framesWork_eraser" ><img src="./img/icons/eraser.png"></button>
+                                
+                                </div>
+                                <div class="dropdown">
+                                    <button  onclick="myFunction()" id="drop-pen" class="dropbtn"><img src="./img/icons/pencil.png"> </button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <input type="button" onclick="return pen()" id="pen" value="1px">
+                                            <input type="button" onclick="return penA()" id="pen-A" value="2px">
+                                            <input type="button" onclick="return penB()" id="pen-B" value="3px">
+                                            <input type="button" onclick="return penC()" id="pen-C" value="4px">
+                                        </div>
+                                </div>
+                                <div id="stroke">
+                                    <button onclick="return stroke()" id="framesWork_stroke"><img src="./img/icons/line.png"></button>
+                               
+                                </div>  
+                            </div>
+                            <div class="left-side__block-a_actionButtons_colors">
+                                <div class="colorButtons">
+                                    <h3>Paint Bucket</h3>
+                                    
+                                    <input type="color" value="#ffffff" id="bgcolorpicker" class="colorpicker">
+                                </div>
+                                <div class="colorButtons">
+                                    <h3>Choose the Colour</h3>
+                                  
+                                    <input type="color" id="colorpicker"  class="colorpicker">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-side__block-b">
+                        <img src="" id="canvas-samples">
+                        <div id="left-side__block-b_samples-break"></div>
+                        <div id="dupl-container" src=""></div>
+                    </div>
+                </div>
+                <div id="right-side">
+                    <div id="right-side_main">
+                        <div id="right-side_central-content">
+                            <canvas id="draw" class="cA" name="canv-pat" width="" height=""></canvas>
+                        </div>
+                    </div>
+                    <div id="review-frame">
+                        <div id="review-frame_main">
+                            <img id="myImg" src="" width ='100' height='100'/>
+                            <div id="right-side_button-section">
+                                <div class="right-side_button-section_column">
+                                    <input type="button" onclick="return canvasSizeB()" id="canvas-sizeB" value="32x32">
+                                    <input type="button" onclick="return canvasSizeA()" id="canvas-sizeA" value="64x64">
+                                    <input type="button" onclick="return canvasSizeC()" id="canvas-sizeC" value="128x128">
+                                </div>
+                            </div>
+                        </div>
+                        <button id='buttonFullStart' onClick='Fullscreen()'><img src="./img/icons/fullScreen.png"></button>
+                       
+                       
+                    </div>
+                <script src="./js/index.js"></script>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
